@@ -10,7 +10,7 @@
     <div class="mt-10 mx-auto max-w-screen-xl">
       <section class="relative">
         <div class="mt-6">
-          <BlogList />
+          <CommunityList />
         </div>
       </section>
     </div>

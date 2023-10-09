@@ -16,7 +16,7 @@
 
 <script>
 import MarkdownIt from "markdown-it";
-
+// console.log(this.post);
 export default {
   props: ["post"],
   data() {

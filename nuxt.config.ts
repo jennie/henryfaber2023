@@ -35,10 +35,7 @@ export default defineNuxtConfig({
   googleFonts: {
     display: "swap",
     families: {
-      "DM+Sans": {
-        wght: "100..1000",
-        ital: "100..1000",
-      },
+      "Noto+Sans": true,
     },
   },
   plausible: {
@@ -75,7 +72,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: "en" },
-      bodyAttrs: { class: "antialiased font-body" },
+      bodyAttrs: { class: "antialiased font-body text-body" },
     },
   },
 });

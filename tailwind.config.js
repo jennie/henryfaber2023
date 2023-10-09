@@ -13,9 +13,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: "Arial",
-        display: "Arial",
-        sans: "Arial",
+        body: "Noto Sans",
+        display: "GT Maru",
+        sans: "Noto Sans",
       },
     },
   },
