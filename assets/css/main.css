@@ -121,17 +121,4 @@ article {
   h2 {
     @apply uppercase tracking-tight font-medium;
   }
-  ul,
-  ol {
-    @apply list-none m-0 mt-4 p-0;
-
-    li {
-      @apply relative pl-6;
-
-      &:before {
-        content: "–";
-        @apply absolute left-0 top-0;
-      }
-    }
-  }
 }

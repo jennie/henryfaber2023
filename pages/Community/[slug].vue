@@ -3,17 +3,15 @@
     <template #default="{ doc }">
       <div class="flex flex-wrap mx-auto justify-center items-center">
         <div class="w-full h-full">
-          <div class="prose lg:prose-base">
-            <h1>
-              {{ doc.title }}
-            </h1>
-            <p class="article-date">
-              {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
-            </p>
-            <article class="prose lg:prose-lg max-w-screen-md">
-              <ContentRenderer :value="doc" />
-            </article>
-          </div>
+          <h1 class="py-0 my-0 font-black">
+            {{ doc.title }}
+          </h1>
+          <p class="my-0 py-0 font-mono">
+            {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
+          </p>
+          <article class="prose lg:prose-lg">
+            <ContentRenderer :value="doc" />
+          </article>
         </div>
       </div>
     </template>

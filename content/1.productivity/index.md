@@ -10,9 +10,3 @@ bodyClass: "page--productivity"
 Productivity Here!
 ::
 
-Any kind of old text you want.
-
-::page-header
-Another One!
-::
-

@@ -1,18 +1,10 @@
 <template>
   <ContentDoc v-slot="{ doc }">
-    <div class="pt-16 flex flex-wrap mx-auto justify-center items-center">
-      <div class="w-full h-full">
-        <div class="prose lg:prose-base">
-          <ContentRenderer :value="doc" />
-        </div>
-      </div>
+    <div class="prose lg:prose-base">
+      <ContentRenderer :value="doc" />
     </div>
-    <div class="mt-10 mx-auto max-w-screen-xl">
-      <section class="relative">
-        <div class="mt-6">
-          <ProjectList />
-        </div>
-      </section>
+    <div class="mt-6">
+      <ProjectList />
     </div>
   </ContentDoc>
 </template>
