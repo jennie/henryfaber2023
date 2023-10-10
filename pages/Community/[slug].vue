@@ -1,20 +1,18 @@
 <template>
   <ContentDoc>
     <template #default="{ doc }">
-      <div class="pt-16 flex flex-wrap mx-auto justify-center items-center">
+      <div class="flex flex-wrap mx-auto justify-center items-center">
         <div class="w-full h-full">
           <div class="prose lg:prose-base">
-            <section class="max-w-screen-xl mx-auto mt-6 lg:mt-0">
-              <h1 class="article-title uppercase">
-                {{ doc.title }}
-              </h1>
-              <p class="article-date">
-                {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
-              </p>
-              <article class="prose lg:prose-xl max-w-screen-md">
-                <ContentRenderer :value="doc" />
-              </article>
-            </section>
+            <h1>
+              {{ doc.title }}
+            </h1>
+            <p class="article-date">
+              {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
+            </p>
+            <article class="prose lg:prose-xl max-w-screen-md">
+              <ContentRenderer :value="doc" />
+            </article>
           </div>
         </div>
       </div>
@@ -25,7 +23,7 @@
           <div class="article max-w-5xl mx-auto">
             <h1 class="article-title">404</h1>
             <p class="text-center">
-              Sorry, that news item wasn't found for some reason!
+              Sorry, that post wasn't found for some reason!
             </p>
           </div>
         </div>

@@ -9,18 +9,11 @@ main {
   /* @apply pb-0; */
 }
 h1 {
-  @apply font-display text-5xl;
-
-  letter-spacing: -1px;
-  font-smooth: auto;
-  -webkit-font-smoothing: auto;
+  @apply font-display tracking-tight text-3xl;
 }
 
 h2 {
-  @apply font-display text-3xl;
-  font-smooth: auto;
-  -webkit-font-smoothing: auto;
-  /* @mixin text-crt 0.5;  */
+  @apply font-display text-2xl;
 }
 
 h3 {
@@ -124,6 +117,10 @@ section {
 }
 
 article {
+  @apply mt-8;
+  h2 {
+    @apply uppercase tracking-tight font-medium;
+  }
   ul,
   ol {
     @apply list-none m-0 mt-4 p-0;
