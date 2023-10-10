@@ -10,7 +10,7 @@
             <p class="article-date">
               {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
             </p>
-            <article class="prose lg:prose-xl max-w-screen-md">
+            <article class="prose lg:prose-lg max-w-screen-md">
               <ContentRenderer :value="doc" />
             </article>
           </div>
